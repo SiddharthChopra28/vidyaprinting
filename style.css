@@ -1,0 +1,149 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: rgb(191, 194, 202);
+}
+
+#navbar{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+
+
+#page1{
+    display: flex;
+    height: calc(100vh - 60px);
+    background: linear-gradient(to right, rgb(19, 46, 77), rgb(51, 116, 190));
+    /* flex-direction: column; */
+
+}
+
+.head{
+    color: white;
+    font-size: 90px;
+}
+
+.underhead{
+    color: white;
+
+    font-size: 50px;
+
+}
+
+.left{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: auto;
+
+}
+.right{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: auto;
+    color: white;
+}
+
+#page2{
+    display: flex;
+    flex-direction: column;
+    /* height: calc(100vh - 60px); */
+    /* min-width: 100vh; */
+    background: rgb(191, 194, 202);
+}
+
+
+
+#gallery{
+    background-color: rgb(191, 194, 202);;
+}
+
+.fade-in {
+    opacity: 0;
+    /* animation: fadeIn 1.5s ease-in forwards; */
+    transform: translateY(80px);
+    animation: moveUp 1s ease-in forwards 0.75s;
+}
+
+
+
+#page3{
+    background: rgb(224, 209, 220);
+    padding-top: 1%;
+    padding-bottom: 5%;
+
+}
+
+#samplesection{
+    margin-top: 0;
+    background: rgb(224, 209, 220);
+}
+
+
+#page4{
+    margin-top: 0;
+    margin-bottom: auto;
+}
+#clients{
+    background-color: rgb(206, 226, 206);
+}
+
+#about-left{
+    background-color: rgb(255, 111, 111);
+}
+#about-right{
+    background-color: rgb(240, 214, 214);
+}
+
+.scrollbar-hidden{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+
+@keyframes moveUp {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .showroom-img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+#showroom{
+    flex-grow: 1;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
+    white-space: nowrap;
+
+} */
+
+@media screen and (max-width: 768px) {
+    #page1{
+        display: flex;
+        height: calc(100vh - 56px);
+        background: linear-gradient(to right, rgb(19, 46, 77), rgb(51, 116, 190));
+        flex-direction: column;
+    
+    }
+    
+    
+}
