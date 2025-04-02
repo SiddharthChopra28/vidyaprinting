@@ -87,6 +87,8 @@ body{
 }
 #clients{
     background-color: rgb(206, 226, 206);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 #about-left{
